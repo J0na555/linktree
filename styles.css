@@ -50,13 +50,14 @@ body,
     flex-direction: column;
 }
 header img{
-    max-width: 140px;
-    width: 100%;
-    margin: 0 auto;
+    width: 140px;
+    height:140px;
     border-radius: 50%;
-    border: 3px solid white;
-    padding: 5px;
-    background:rgba(255, 255, 255, 0.2) ;
+    border: 2px solid white;
+    padding: 2px;
+    background:rgba(228, 10, 10, 0.2);
+    object-fit: cover;
+    object-position:center;
 }
 header mark{
     border-radius: 4px;
@@ -93,7 +94,7 @@ main{
     font-size: 1.2em;
     font-weight: 500;
     color: white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -102,6 +103,7 @@ main{
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
     border-color:skyblue;
+    opacity:0.8;
 }
 .linkBackground{
     position:absolute;
@@ -109,7 +111,11 @@ main{
     background: #020617;
     opacity:0.6;
     z-index:-1;
-    border-radius: 10px;
+    border-radius: 10px ;
+    transition: all 0.2s ease-in-out;
+}
+.link:hover .linkBackground{
+    transform: scale(1.01);
 }
 .link p {
     font-size: 1em;
@@ -128,8 +134,15 @@ main{
         padding: 80px 14px;
     }
     header img{
-        max-width: 200px;
-        padding-bottom:24px;
+        width: 140px;
+        height:140px;
+        border-radius: 50%;
+        border: 2px solid white;
+        padding: 2px;
+        background:rgba(228, 10, 10, 0.2);
+        object-fit: cover;
+        object-position:center;
+    
     }
     header h1{
         font-size:1.2em;
